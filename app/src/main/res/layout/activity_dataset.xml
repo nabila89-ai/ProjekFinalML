@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context="com.example.finalprojectAnNada.DatasetActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/red"
+        android:orientation="vertical"
+        android:weightSum="10"
+        app:layout_constraintBaseline_toBaselineOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="132dp"
+            android:layout_height="172dp"
+            app:srcCompat="@drawable/dataset" />
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="7"
+            android:columnCount="1"
+            android:rowCount="4"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:padding="15dp">
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="290dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="100dp"
+                        android:text="Dataset \n Dataset ini berisikan tentang Penyakit kardiovaskular adalah penyebab kematian paling umum secara global, merenggut sekitar 17,9 juta nyawa setiap tahunnya, atau setara dengan 31% dari seluruh kematian di seluruh dunia. Gagal jantung merupakan kejadian umum yang disebabkan oleh penyakit Kardiovaskular. Hal ini ditandai dengan ketidakmampuan jantung untuk memompa pasokan darah yang cukup ke tubuh. Tanpa aliran darah yang cukup, semua fungsi utama tubuh akan terganggu. Gagal jantung adalah suatu kondisi atau kumpulan gejala yang melemahkan jantung"
+                        android:textAlignment="center"
+                        android:textColor="@color/red"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:fontVariationSettings="">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/white"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="19dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="115dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Kaggle : Vivek Yash \n
+Heart Failure Prediction \n Jumlah data : 298 baris \n
+Jumlah fitur : 13 kolom "
+                        android:textAlignment="center"
+                        android:textColor="@color/red"
+                        android:textSize="15sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
